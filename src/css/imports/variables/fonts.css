@@ -5,6 +5,18 @@
   --karma: "Karma", serif;
 }
 
+h1,
+h2,
+h3 {
+  font-family: var(--chillax);
+  font-weight: var(--bold-font);
+  margin: 0 0 30px 0;
+}
+
+p {
+  margin: 0;
+}
+
 /* Font sizes */
 
 :root {
