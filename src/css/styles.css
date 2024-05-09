@@ -1,13 +1,42 @@
+@import url("./imports/variables/colors.css");
+@import url("./imports/variables/fonts.css");
+@import url("./imports/variables/variables.css");
+@import url("./imports/links.css");
+
 /* Fonts */
 
 body {
-  font-family: Helvetica, sans-serif;
+  font-family: var(--helvetica);
+  color: var(--blue);
 }
 
 .chillax {
-  font-family: "Chillax", sans-serif;
+  font-family: var(--chillax);
 }
 
 .karma {
-  font-family: "Karma", serif;
+  font-family: var(--karma);
+}
+
+/* Header */
+
+header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  height: 200px;
+  background-color: var(--white);
+  margin: 0 50px 0 50px;
+}
+
+nav {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.user {
+  display: flex;
+  align-items: center;
+  gap: 10px;
 }

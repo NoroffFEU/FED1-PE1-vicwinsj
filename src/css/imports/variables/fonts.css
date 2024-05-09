@@ -1,0 +1,71 @@
+/* Fonts */
+:root {
+  --helvetica: Helvetica, sans-serif;
+  --chillax: "Chillax", sans-serif;
+  --karma: "Karma", serif;
+}
+
+/* Font sizes */
+
+:root {
+  --l-heading-desktop: 6rem;
+  --m-heading-desktop: 3rem;
+  --s-heading-desktop: 2rem;
+  --l-heading-tablet: 3rem;
+  --m-heading-tablet: 2rem;
+  --s-heading-tablet: 1.25rem;
+  --l-heading-mobile: 2rem;
+  --m-heading-mobile: 1.25rem;
+  --s-heading-mobile: 1rem;
+  --xl-body-desktop: 1.5rem;
+  --l-body-desktop: 1.25rem;
+  --m-body-desktop: 1rem;
+  --s-body-desktop: 0.75rem;
+  --xl-body-mobile: 1.25rem;
+  --l-body-mobile: 1rem;
+  --m-body-mobile: 0.75rem;
+  --s-body-mobile: 0.625rem;
+}
+
+/* Transformations */
+
+:root {
+  --letter-spacing: 0.2rem;
+  --bold-font: 600;
+}
+
+.xl-font {
+  font-size: var(--xl-body-desktop);
+}
+
+.l-font {
+  font-size: var(--l-body-mobile);
+}
+
+.m-font {
+  font-size: var(--m-body-mobile);
+}
+
+.s-font {
+  font-size: var(--s-body-mobile);
+}
+
+.l-heading {
+  font-size: var(--l-heading-mobile);
+}
+
+.m-heading {
+  font-size: var(--m-heading-mobile);
+}
+
+.s-heading {
+  font-size: var(--s-heading-mobile);
+}
+
+.bold {
+  font-weight: var(--bold-font);
+}
+
+.italic {
+  font-style: italic;
+}
