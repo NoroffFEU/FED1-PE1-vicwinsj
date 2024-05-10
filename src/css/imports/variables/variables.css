@@ -1,0 +1,15 @@
+:root {
+  --max-w: 1200px;
+}
+
+.max-w {
+  max-width: var(--max-w);
+}
+
+.full-w {
+  width: 100%;
+}
+
+.min-margin {
+  margin: 0 0 0 50px;
+}

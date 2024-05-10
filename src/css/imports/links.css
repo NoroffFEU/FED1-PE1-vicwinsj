@@ -1,4 +1,44 @@
+@import url("./variables/fonts.css");
+
 a {
   text-decoration: none;
   color: var(--blue);
+}
+
+.cta {
+  background-color: var(--white);
+  font-family: "Chillax", sans-serif;
+  font-size: var(--xl-body-mobile);
+  font-weight: 600;
+  border-radius: 10px;
+  padding: 1px 30px 1px 30px;
+}
+
+.cta-blue {
+  border: solid var(--blue) 1px;
+}
+
+.cta-blue:hover {
+  color: var(--white);
+  background-color: var(--blue);
+}
+
+.cta-gold {
+  color: var(--gold);
+  border: solid var(--gold) 1px;
+}
+
+.cta-gold:hover {
+  color: var(--white);
+  background-color: var(--gold);
+}
+
+.cta-red {
+  color: var(--red);
+  border: solid var(--red) 1px;
+}
+
+.cta-red:hover {
+  color: var(--white);
+  background-color: var(--red);
 }
