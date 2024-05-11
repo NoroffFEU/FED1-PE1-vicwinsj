@@ -5,6 +5,20 @@
   --karma: "Karma", serif;
 }
 
+body {
+  font-family: var(--helvetica);
+  color: var(--blue);
+  margin: 0;
+}
+
+.chillax {
+  font-family: var(--chillax);
+}
+
+.karma {
+  font-family: var(--karma);
+}
+
 h1,
 h2,
 h3 {

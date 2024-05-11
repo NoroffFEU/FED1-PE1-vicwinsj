@@ -1,5 +1,6 @@
 :root {
   --max-w: 1200px;
+  --padding: 100px;
 }
 
 .max-w {
@@ -12,4 +13,8 @@
 
 .min-margin {
   margin: 0 0 0 50px;
+}
+
+.padding {
+  padding: var(--padding);
 }

@@ -76,3 +76,39 @@
   top: 50%;
   transform: translate(-50%, -50%);
 }
+
+/* Section 2 */
+
+.index-section2 {
+  display: grid;
+  grid-template-columns: 333px 333px 333px;
+  grid-template-rows: minmax(100px, auto);
+  gap: 1.8rem;
+}
+
+.index-section2 h2 {
+  grid-column: -1/1;
+}
+
+.index-grid-item {
+  display: flex;
+  flex-direction: column;
+  gap: 50px;
+}
+
+.index-grid-item--img {
+  height: 333px;
+  width: 333px;
+  overflow: hidden;
+}
+
+.index-grid-item img {
+  min-width: 100%;
+  height: 100%;
+  object-fit: contain;
+  object-position: left;
+}
+
+.index-grid-item a {
+  align-self: flex-end;
+}
