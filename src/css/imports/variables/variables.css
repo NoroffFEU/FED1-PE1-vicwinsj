@@ -11,6 +11,10 @@
   width: 100%;
 }
 
+.vw {
+  width: 100vw;
+}
+
 .min-margin {
   margin: 0 0 0 50px;
 }

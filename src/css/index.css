@@ -27,10 +27,10 @@
 }
 
 .carousel-img {
-  background-color: linear-gradient(
+  background: linear-gradient(
     to bottom,
     rgb(255, 255, 255, 0),
-    rgb(141, 64, 64, 1)
+    rgb(255, 255, 255, 1)
   );
   width: 400px;
   height: 400px;
