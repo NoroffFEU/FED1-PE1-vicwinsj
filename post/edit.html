@@ -18,12 +18,13 @@
       src="https://kit.fontawesome.com/7d99a0a315.js"
       crossorigin="anonymous"
     ></script>
-    <link rel="stylesheet" href="./src/css/styles.css" />
+    <link rel="stylesheet" href="../src/css/styles.css" />
+    <link rel="stylesheet" href="../src/css/post/edit.css" />
   </head>
   <body>
     <header>
-      <a href="index.html"
-        ><img src="images/logo.svg" alt="Logo of Spasiba"
+      <a href="../index.html"
+        ><img src="../images/logo.svg" alt="Logo of Spasiba"
       /></a>
       <nav class="xl-font">
         <a href="index.html">Blog</a>
@@ -37,6 +38,38 @@
         <a href="">Register</a>
       </div>
     </header>
+    <main>
+      <div class="edit-form full-w max-w">
+        <h1 class="form-heading m-heading">
+          Editing post "Look at our new sauna"
+        </h1>
+        <form>
+          <fieldset>
+            <label class="m-font" for="title">Title</label>
+            <input type="text" id="title" name="title" required />
+          </fieldset>
+          <fieldset>
+            <label class="m-font" for="body">Body</label>
+            <textarea type="text" id="body" name="body" required></textarea>
+          </fieldset>
+          <div class="edit-bottom">
+            <div class="edit-image">
+              <div class="edit-image-img">
+                <img
+                  src="https://images.unsplash.com/photo-1614667288602-9ac6e37318a7?q=80&w=2874&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+                  alt=""
+                />
+              </div>
+              <a class="m-font" href="">Upload new picture</a>
+            </div>
+            <div class="edit-buttons">
+              <a class="cta cta-blue" href="">Update</a>
+              <a class="cta cta-red" href="">Delete</a>
+            </div>
+          </div>
+        </form>
+      </div>
+    </main>
     <footer>
       <ul class="opening-hours">
         <h3 class="xl-font">Opening hours</h3>
@@ -59,7 +92,7 @@
         </div>
         <div class="footer-logo--img">
           <img
-            src="images/logo-footer.svg"
+            src="../images/logo-footer.svg"
             alt="Alternative logo for Spasiba"
           />
           <p class="s-font">© Copyright Spasiba 2024</p>
