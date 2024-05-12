@@ -18,15 +18,16 @@
       src="https://kit.fontawesome.com/7d99a0a315.js"
       crossorigin="anonymous"
     ></script>
-    <link rel="stylesheet" href="./src/css/styles.css" />
+    <link rel="stylesheet" href="../src/css/styles.css" />
+    <link rel="stylesheet" href="../src/css/account.css" />
   </head>
   <body>
     <header>
       <a href="../index.html"
-        ><img src="images/logo.svg" alt="Logo of Spasiba"
+        ><img src="../images/logo.svg" alt="Logo of Spasiba"
       /></a>
       <nav class="xl-font">
-        <a href="index.html">Blog</a>
+        <a href="../index.html">Blog</a>
         <p>About</p>
         <p>Contact</p>
         <p>Tickets</p>
@@ -37,6 +38,26 @@
         <a href="">Register</a>
       </div>
     </header>
+    <main>
+      <div class="register-form">
+        <h1 class="m-heading">Login to your account</h1>
+        <form>
+          <fieldset>
+            <label class="m-font" for="email">Email</label>
+            <input type="email" id="email" name="email" required />
+          </fieldset>
+          <fieldset>
+            <label class="m-font" for="password">Password</label>
+            <input type="password" id="password" name="password" required />
+          </fieldset>
+        </form>
+        <a class="cta cta-blue" href="">Login</a>
+        <div class="got-account">
+          <p class="s-font">Don't have an account?</p>
+          <a class="s-font bold" href="">Register here</a>
+        </div>
+      </div>
+    </main>
     <footer>
       <ul class="opening-hours">
         <h3 class="xl-font">Opening hours</h3>
@@ -59,7 +80,7 @@
         </div>
         <div class="footer-logo--img">
           <img
-            src="images/logo-footer.svg"
+            src="../images/logo-footer.svg"
             alt="Alternative logo for Spasiba"
           />
           <p class="s-font">© Copyright Spasiba 2024</p>

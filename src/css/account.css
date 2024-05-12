@@ -2,6 +2,10 @@ main {
   background-color: var(--light-grey);
 }
 
+input {
+  border: solid 1px var(--dark-grey);
+}
+
 .register-form {
   background-color: var(--beige);
   padding: 100px 50px 100px 50px;
