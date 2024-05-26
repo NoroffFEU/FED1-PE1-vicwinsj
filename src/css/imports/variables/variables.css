@@ -1,6 +1,8 @@
 :root {
   --max-w: 1200px;
-  --padding: 100px;
+  --padding-desktop: 100px;
+  --padding-tablet: 50px;
+  --padding-mobile: 25px;
 }
 
 .max-w {
@@ -20,5 +22,5 @@
 }
 
 .padding {
-  padding: var(--padding);
+  padding: var(--padding-mobile);
 }
