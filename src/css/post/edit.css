@@ -2,7 +2,7 @@ main {
   background-color: var(--dark-grey);
   color: var(--white);
   width: 100vw;
-  padding: 50px 0 50px 0;
+  padding: 50px 10px 50px 10px;
 }
 
 form-heading {
@@ -19,7 +19,7 @@ textarea {
 }
 
 .edit-form {
-  padding: 0 50px 0 50px;
+  margin: 0 10px 0 10px;
   display: flex;
   flex-direction: column;
   gap: 50px;
@@ -28,12 +28,12 @@ textarea {
 .edit-bottom {
   display: flex;
   justify-content: space-between;
-  width: 100%;
+  max-width: 100%;
 }
 
 .edit-image {
   display: flex;
-  gap: 20px;
+  gap: 10px;
 }
 
 .edit-image-img {
@@ -54,6 +54,6 @@ textarea {
 
 .edit-buttons {
   display: flex;
-  gap: 20px;
+  gap: 10px;
   align-self: flex-end;
 }
