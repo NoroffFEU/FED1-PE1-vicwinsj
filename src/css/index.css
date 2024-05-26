@@ -7,7 +7,7 @@
   gap: 100px;
   align-items: center;
   background-color: var(--beige);
-  height: 800px;
+  height: 400px;
 }
 
 .carousel-wrapper {
@@ -33,8 +33,8 @@
     rgb(255, 255, 255, 0),
     rgb(255, 255, 255, 1)
   );
-  width: 400px;
-  height: 400px;
+  width: 200px;
+  height: 200px;
   overflow: hidden;
 }
 
@@ -66,6 +66,7 @@
   width: 100%;
   bottom: 100px;
   z-index: 3;
+  letter-spacing: 0.2rem;
 }
 
 .carousel-img--button {
@@ -92,13 +93,20 @@
   z-index: 5;
 }
 
+.left-arrow img,
+.right-arrow img {
+  width: 35px;
+  height: auto;
+}
+
 /* Section 2 */
 
 .index-section2 {
   display: grid;
-  grid-template-columns: 333px 333px 333px;
+  grid-template-columns: 1fr;
   grid-template-rows: minmax(100px, auto);
   gap: 1.8rem;
+  height: 100%;
 }
 
 .index-section2 h2 {
@@ -109,11 +117,16 @@
   display: flex;
   flex-direction: column;
   gap: 50px;
+  max-height: 500px;
+  min-height: 333px;
+  min-width: 333px;
+  max-width: 400px;
 }
 
 .index-grid-item--img {
-  height: 333px;
-  width: 333px;
+  min-height: 333px;
+  max-height: 100%;
+  max-width: 100%;
   overflow: hidden;
 }
 

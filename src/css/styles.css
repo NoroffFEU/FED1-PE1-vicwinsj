@@ -22,15 +22,50 @@ header {
 }
 
 nav {
-  display: flex;
   align-items: center;
   gap: 10px;
+  /* display: none; */
+  transform: translateY(-200%);
+  transition: transform 0.2s;
 }
 
-.user {
-  display: flex;
+.account {
   align-items: center;
   gap: 10px;
+  display: none;
+}
+
+.show-menu {
+  transform: translateY(0);
+}
+
+.burger-menu {
+  position: relative;
+  cursor: pointer;
+}
+
+.open-icon {
+  height: 25px;
+}
+
+.hide {
+  display: none;
+}
+
+.close-icon {
+  height: 25px;
+  position: absolute;
+  inset: 0;
+}
+
+.open-icon > *,
+.close-icon > * {
+  justify-self: center;
+  height: 25px;
+}
+
+.close-icon.show {
+  opacity: 100;
 }
 
 /* Footer */

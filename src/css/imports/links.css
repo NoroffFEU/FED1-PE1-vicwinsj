@@ -5,6 +5,12 @@ a {
   color: var(--blue);
 }
 
+button {
+  border: none;
+  background-color: var(--white);
+  color: var(--blue);
+}
+
 .cta {
   background-color: var(--white);
   font-family: "Chillax", sans-serif;
