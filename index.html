@@ -11,6 +11,23 @@
     />
     <title>Spasiba | A unique spa experience in the Norwegian forest</title>
     <link
+      rel="apple-touch-icon"
+      sizes="180x180"
+      href="/images/favicons/apple-touch-icon.png"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="/images/favicons/favicon-32x32.png"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="16x16"
+      href="/images/favicons/favicon-16x16.png"
+    />
+    <link
       href="https://api.fontshare.com/v2/css?f[]=chillax@200,300,400,500,600,700,1&f[]=karma@300,400,500,600,700,1&display=swap"
       rel="stylesheet"
     />
@@ -21,202 +38,82 @@
     <link rel="stylesheet" href="src/css/styles.css" />
     <link rel="stylesheet" href="src/css/index.css" />
     <link rel="stylesheet" href="src/css/media.css" />
-    <script type="module" src="./scripts/menu.mjs"></script>
+    <script type="module" src="./scripts/global/global.mjs"></script>
+    <script type="module" src="./scripts/blog/blog.mjs"></script>
   </head>
   <body>
-    <!-- <header>
-      <a href="index.html"
-        ><img src="images/logo.svg" alt="Logo of Spasiba"
-      /></a>
-      <nav class="menu xl-font">
-        <a href="index.html">Blog</a>
-        <p>About</p>
-        <p>Contact</p>
-        <p>Tickets</p>
-      </nav>
-      <div class="account l-font">
-        <a href="account/login.html">Login</a>
-        <p>|</p>
-        <a href="account/register.html">Register</a>
+    <header class="padding-sides">
+      <div class="header-left">
+        <a href="index.html"
+          ><img src="images/logo.svg" class="logo" alt="Logo of Spasiba"
+        /></a>
+        <nav class="menu l-font">
+          <a href="index.html">Blog</a>
+          <p>About</p>
+          <p>Contact</p>
+          <p>Tickets</p>
+        </nav>
       </div>
-      <button class="burger-menu">
-        <div class="open-icon">
-          <i class="fa-solid fa-bars"></i>
+      <div class="header-right">
+        <div id="account" class="account m-font">
+          <a id="login-link" href="account/login.html">Login</a>
+          <p>|</p>
+          <a id="register-link" href="account/register.html">Register</a>
         </div>
-        <div class="close-icon">
-          <i class="fa-solid fa-xmark"></i>
-        </div>
-      </button>
-    </header> -->
+        <button id="logout-button" class="m-font hide">Logout</button>
+        <button class="burger-menu">
+          <div class="open-icon">
+            <i class="fa-solid fa-bars"></i>
+          </div>
+          <div class="close-icon hide">
+            <i class="fa-solid fa-xmark"></i>
+          </div>
+        </button>
+      </div>
+    </header>
     <main>
-      <div class="index-section1 full-w">
-        <h1 class="m-heading full-w max-w min-margin">Latest blog posts</h1>
-        <div class="carousel-wrapper">
-          <div class="carousel">
-            <div class="carousel-item">
-              <div class="carousel-img">
-                <img
-                  src="https://plus.unsplash.com/premium_photo-1683141179185-019966ae7ed6?q=80&w=2062&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
-                  alt=""
-                />
-                <div class="carousel-img-overlay"></div>
-              </div>
-              <p class="carousel-img--text helvetica l-font">
-                Our special massage
-              </p>
-              <a class="carousel-img--button cta cta-blue" href="">Read</a>
-            </div>
-            <div class="carousel-item">
-              <div class="carousel-img">
-                <img
-                  src="https://plus.unsplash.com/premium_photo-1683141179185-019966ae7ed6?q=80&w=2062&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
-                  alt=""
-                />
-                <div class="carousel-img-overlay"></div>
-              </div>
-              <p class="carousel-img--text helvetica xl-font">
-                Our special massage
-              </p>
-              <a class="carousel-img--button cta cta-blue" href="">Read</a>
-            </div>
-            <div class="carousel-item">
-              <div class="carousel-img">
-                <img
-                  src="https://plus.unsplash.com/premium_photo-1683141179185-019966ae7ed6?q=80&w=2062&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
-                  alt=""
-                />
-                <div class="carousel-img-overlay"></div>
-              </div>
-              <p class="carousel-img--text helvetica xl-font">
-                Our special massage
-              </p>
-              <a class="carousel-img--button cta cta-blue" href="">Read</a>
-            </div>
-            <div class="carousel-item">
-              <div class="carousel-img">
-                <img
-                  src="https://plus.unsplash.com/premium_photo-1683141179185-019966ae7ed6?q=80&w=2062&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
-                  alt=""
-                />
-                <div class="carousel-img-overlay"></div>
-              </div>
-              <p class="carousel-img--text helvetica xl-font">
-                Our special massage
-              </p>
-              <a class="carousel-img--button cta cta-blue" href="">Read</a>
-            </div>
-            <a class="left-arrow" href="">
-              <img class="" src="images/left-arrow.svg" alt=""
-            /></a>
-            <a class="right-arrow" href=""
-              ><img class="" src="images/right-arrow.svg" alt=""
-            /></a>
-          </div>
+      <div class="index-section1 full-w padding-top-bottom">
+        <div class="full-w max-w">
+          <h1 class="m-heading margin">Latest blog posts</h1>
+        </div>
+        <div class="max-w full-w carousel-wrapper">
+          <div id="carousel" class="carousel"></div>
+          <button id="prevButton" class="left-arrow">
+            <img class="" src="images/left-arrow.svg" alt="" />
+          </button>
+          <button id="nextButton" class="right-arrow">
+            <img class="" src="images/right-arrow.svg" alt="" />
+          </button>
         </div>
       </div>
-      <div class="index-section2 padding">
-        <h2 class="m-heading">Check out our other blog posts</h2>
-        <div class="index-grid-item">
-          <div class="index-grid-item--img">
-            <img
-              src="https://plus.unsplash.com/premium_photo-1683141179185-019966ae7ed6?q=80&w=2062&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
-              alt=""
-            />
-          </div>
-          <p class="xl-font letter-spacing">Look at our new sauna</p>
-          <a class="cta cta-blue" href="">Read</a>
-        </div>
-        <div class="index-grid-item">
-          <div class="index-grid-item--img">
-            <img
-              src="https://plus.unsplash.com/premium_photo-1683141179185-019966ae7ed6?q=80&w=2062&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
-              alt=""
-            />
-          </div>
-          <p class="xl-font letter-spacing">Look at our new sauna</p>
-          <a class="cta cta-blue" href="">Read</a>
-        </div>
-        <div class="index-grid-item">
-          <div class="index-grid-item--img">
-            <img
-              src="https://plus.unsplash.com/premium_photo-1683141179185-019966ae7ed6?q=80&w=2062&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
-              alt=""
-            />
-          </div>
-          <p class="xl-font letter-spacing">Look at our new sauna</p>
-          <a class="cta cta-blue" href="">Read</a>
-        </div>
-        <div class="index-grid-item">
-          <div class="index-grid-item--img">
-            <img
-              src="https://plus.unsplash.com/premium_photo-1683141179185-019966ae7ed6?q=80&w=2062&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
-              alt=""
-            />
-          </div>
-          <p class="xl-font letter-spacing">Look at our new sauna</p>
-          <a class="cta cta-blue" href="">Read</a>
-        </div>
-        <div class="index-grid-item">
-          <div class="index-grid-item--img">
-            <img
-              src="https://plus.unsplash.com/premium_photo-1683141179185-019966ae7ed6?q=80&w=2062&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
-              alt=""
-            />
-          </div>
-          <p class="xl-font letter-spacing">Look at our new sauna</p>
-          <a class="cta cta-blue" href="">Read</a>
-        </div>
-        <div class="index-grid-item">
-          <div class="index-grid-item--img">
-            <img
-              src="https://plus.unsplash.com/premium_photo-1683141179185-019966ae7ed6?q=80&w=2062&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
-              alt=""
-            />
-          </div>
-          <p class="xl-font letter-spacing">Look at our new sauna</p>
-          <a class="cta cta-blue" href="">Read</a>
-        </div>
+      <div class="index-section2 max-w padding-top-bottom">
+        <h2 class="m-heading margin">Check out our other blog posts</h2>
+        <div id="blog-section-2" class="blog-posts padding"></div>
       </div>
     </main>
-    <!-- <footer>
+    <footer class="padding">
       <div class="footer-top">
-        <div class="opening-hours">
-          <h3 class="xl-font">Opening hours</h3>
-          <ul class="footer-list">
-            <li class="l-font">Mon–Fri: 10:00–22:00</li>
-            <li class="l-font">Sat: 12:00–02:00</li>
-            <li class="l-font">Sun: 12:00–22:00</li>
-          </ul>
-        </div>
-        <div class="links-container">
-          <div class="links">
-            <h3 class="xl-font">Links</h3>
+        <div class="footer-lists">
+          <div class="opening-hours">
+            <h3 class="s-heading">Opening hours</h3>
             <ul class="footer-list">
-              <li class="l-font">Terms & Conditions</li>
-              <li class="l-font">Privacy Policy</li>
+              <li class="l-font">Mon–Fri: 10:00–22:00</li>
+              <li class="l-font">Sat: 12:00–02:00</li>
+              <li class="l-font">Sun: 12:00–22:00</li>
             </ul>
           </div>
-        </div>
-        <div class="footer-right-container">
-          <div class="footer-right">
-            <div class="footer-socials">
-              <i class="socials fa-brands fa-facebook"></i>
-              <i class="socials fa-brands fa-instagram"></i>
-              <i class="socials fa-brands fa-snapchat"></i>
-            </div>
-            <div class="contact-info m-font">
-              <p>Spasiba AS</p>
-              <p>Spaserturen 33</p>
-              <p>1234 Spabygd</p>
-              <p>Phone: +47 999 99 999</p>
-              <p>Email: post@spasiba.no</p>
+          <div class="links-container">
+            <div class="links">
+              <h3 class="s-heading">Links</h3>
+              <ul class="footer-list">
+                <li class="l-font">Terms & Conditions</li>
+                <li class="l-font">Privacy Policy</li>
+              </ul>
             </div>
           </div>
         </div>
-      </div>
-      <div class="footer-bottom">
         <div class="newsletter">
-          <h3 class="xl-font">Newsletter</h3>
+          <h3 class="s-heading">Newsletter</h3>
           <form class="footer-form">
             <label class="footer-label m-font" for="email">Email</label>
             <input
@@ -229,16 +126,28 @@
             <a class="footer-button cta cta-gold" href="">Subscribe</a>
           </form>
         </div>
-        <div class="footer-logo-container">
-          <div class="footer-logo">
-            <img
-              src="images/logo-footer.svg"
-              alt="Alternative logo for Spasiba"
-            />
-            <p class="s-font">© Copyright Spasiba 2024</p>
-          </div>
+      </div>
+      <div class="footer-bottom">
+        <div class="footer-socials">
+          <i class="socials fa-brands fa-facebook"></i>
+          <i class="socials fa-brands fa-instagram"></i>
+          <i class="socials fa-brands fa-snapchat"></i>
+        </div>
+        <div class="contact-info m-font">
+          <p>Spasiba AS</p>
+          <p>Spaserturen 33</p>
+          <p>1234 Spabygd</p>
+          <p id="phone">Phone: +47 999 99 999</p>
+          <p>Email: post@spasiba.no</p>
+        </div>
+        <div class="footer-logo">
+          <img
+            src="images/logo-footer.svg"
+            alt="Alternative logo for Spasiba"
+          />
+          <p class="s-font">© Copyright Spasiba 2024</p>
         </div>
       </div>
-    </footer> -->
+    </footer>
   </body>
 </html>

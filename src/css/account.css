@@ -3,25 +3,26 @@ main {
 }
 
 input {
-  border: solid 1px var(--dark-grey);
+  /* border: solid 1px var(--dark-grey); */
 }
 
-.register-form {
-  background-color: var(--beige);
+.account-form {
+  background-color: var(--gold);
   padding: 100px 50px 100px 50px;
   margin: 100px 0 100px 0;
+  min-width: 100px;
   display: flex;
   flex-direction: column;
   gap: 50px;
-  width: 600px;
-  color: var(--dark-grey);
+  /* width: 600px; */
+  color: var(--white);
 }
 
-.register-form h1 {
+.account-form h1 {
   text-align: center;
 }
 
-.register-form a {
+.account-form a {
   align-self: flex-end;
 }
 
@@ -30,6 +31,10 @@ input {
   gap: 5px;
 }
 
-.got-account a {
+/* .got-account a {
   color: var(--dark-grey);
+} */
+
+.error {
+  color: red;
 }

@@ -38,9 +38,8 @@
 .post-index-section1 h1 {
   color: var(--white);
   position: absolute;
-  bottom: 30px;
-  left: 50%;
-  transform: translate(-50%, -50%);
+  bottom: 20px;
+  /* transform: (-50%, -50%); */
   z-index: 2;
   width: 100%;
   text-align: center;
@@ -60,4 +59,34 @@
   flex-direction: column;
   gap: 50px;
   color: var(--dark-grey);
+}
+
+.byline {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+#author {
+  border-bottom: solid 1px var(--dark-grey);
+}
+
+.dates {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+#tags {
+  display: flex;
+  gap: 10px;
+}
+
+#tags p {
+  text-align: center;
+  width: 100px;
+  background-color: var(--gold);
+  color: var(--white);
+  padding: 10px;
+  border-radius: 5px;
 }

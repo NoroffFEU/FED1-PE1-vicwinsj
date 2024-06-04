@@ -16,44 +16,85 @@ header {
   display: flex;
   align-items: center;
   justify-content: space-between;
-  height: 200px;
+  height: 100px;
   background-color: var(--white);
-  padding: 0 50px 0 50px;
+  position: relative;
+}
+
+.header-left {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.header-right {
+  display: flex;
+  gap: 20px;
+  align-items: center;
+}
+
+.logo {
+  width: 130px;
 }
 
 nav {
-  align-items: center;
-  gap: 10px;
-  /* display: none; */
-  transform: translateY(-200%);
-  transition: transform 0.2s;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  width: 100vw;
+  position: absolute;
+  left: 0;
+  top: 100px;
+  background: linear-gradient(
+    to bottom,
+    rgba(255, 255, 255, 1),
+    rgba(255, 255, 255, 0.7)
+  );
+  z-index: 3;
+  padding: 50px 0 50px 0;
+  transition: 0.3s ease-in-out;
+  translate: 0 -450px;
+  z-index: 10;
+}
+
+.visible {
+  translate: 0 0;
+}
+
+nav > * {
+  margin: 0 0 20px 20px;
 }
 
 .account {
+  display: flex;
   align-items: center;
   gap: 10px;
-  display: none;
-}
-
-.show-menu {
-  transform: translateY(0);
 }
 
 .burger-menu {
   position: relative;
   cursor: pointer;
+  width: 25px;
+  height: 25px;
 }
 
 .open-icon {
-  height: 25px;
+  width: 25px;
+  height: 100%;
+}
+
+.open-icon,
+.close-icon {
+  transition: all 0.3s ease;
 }
 
 .hide {
-  display: none;
+  display: none !important;
 }
 
 .close-icon {
-  height: 25px;
+  width: 25px;
+  height: 100%;
   position: absolute;
   inset: 0;
 }
@@ -61,11 +102,9 @@ nav {
 .open-icon > *,
 .close-icon > * {
   justify-self: center;
+  align-self: center;
+  width: 25px;
   height: 25px;
-}
-
-.close-icon.show {
-  opacity: 100;
 }
 
 /* Footer */
@@ -73,25 +112,31 @@ nav {
 footer {
   display: flex;
   flex-direction: column;
-  gap: 50px;
   color: var(--white);
   background-color: var(--blue);
-  height: 300px;
-  padding: 50px;
+  gap: 100px;
 }
 
 .footer-top {
   display: flex;
+  flex: 2;
+  flex-direction: column;
   justify-content: space-between;
+  gap: 50px;
 }
 
 .footer-bottom {
   display: flex;
+  flex: 1;
+  flex-direction: column;
   justify-content: space-between;
+  gap: 50px;
 }
 
-.footer-left {
-  flex: 2;
+.footer-lists {
+  display: flex;
+  flex-direction: column;
+  gap: 50px;
 }
 
 .opening-hours {
@@ -104,25 +149,12 @@ footer {
 .links-container {
   flex: 1;
   display: flex;
-  justify-content: center;
 }
 
 .links {
   display: flex;
   flex-direction: column;
   gap: 20px;
-}
-
-.footer-right-container {
-  flex: 1;
-  display: flex;
-  justify-content: flex-end;
-}
-
-.footer-right {
-  display: flex;
-  flex-direction: column;
-  justify-content: space-between;
 }
 
 .footer-socials {
@@ -141,17 +173,14 @@ footer {
   align-items: center;
 }
 
+#phone {
+  color: var(--white) !important;
+}
+
 .newsletter {
-  flex: 2;
   display: flex;
   flex-direction: column;
   gap: 20px;
-}
-
-.footer-logo-container {
-  flex: 1;
-  display: flex;
-  justify-content: flex-end;
 }
 
 .footer-logo {
@@ -175,9 +204,6 @@ footer {
 
 .footer-label {
   display: none;
-}
-
-#footer-email::placeholder {
 }
 
 #footer-email {
@@ -209,4 +235,5 @@ input {
   border-radius: 20px;
   border: none;
   padding: 20px;
+  font-family: var(--helvetica);
 }

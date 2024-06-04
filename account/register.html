@@ -11,6 +11,23 @@
     />
     <title>Spasiba | Register user</title>
     <link
+      rel="apple-touch-icon"
+      sizes="180x180"
+      href="/images/favicons/apple-touch-icon.png"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="/images/favicons/favicon-32x32.png"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="16x16"
+      href="/images/favicons/favicon-16x16.png"
+    />
+    <link
       href="https://api.fontshare.com/v2/css?f[]=chillax@200,300,400,500,600,700,1&f[]=karma@300,400,500,600,700,1&display=swap"
       rel="stylesheet"
     />
@@ -21,87 +38,94 @@
     <link rel="stylesheet" href="../src/css/styles.css" />
     <link rel="stylesheet" href="../src/css/account.css" />
     <link rel="stylesheet" href="../src/css/media.css" />
+    <script type="module" src="../scripts/global/global.mjs"></script>
+    <script type="module" src="../scripts/account/register.mjs"></script>
   </head>
   <body>
-    <header>
-      <a href="../index.html"
-        ><img src="../images/logo.svg" alt="Logo of Spasiba"
-      /></a>
-      <nav class="xl-font">
-        <a href="../index.html">Blog</a>
-        <p>About</p>
-        <p>Contact</p>
-        <p>Tickets</p>
-      </nav>
-      <div class="account l-font">
-        <a href="login.html">Login</a>
-        <p>|</p>
-        <a href="register.html">Register</a>
+    <header class="padding-sides">
+      <div class="header-left">
+        <a href="../index.html"
+          ><img src="../images/logo.svg" class="logo" alt="Logo of Spasiba"
+        /></a>
+        <nav class="menu l-font">
+          <a href="../index.html">Blog</a>
+          <p>About</p>
+          <p>Contact</p>
+          <p>Tickets</p>
+        </nav>
+      </div>
+      <div class="header-right">
+        <div id="account" class="account m-font">
+          <a id="login-link" href="login.html">Login</a>
+        </div>
+        <button id="logout-button" class="m-font hide">Logout</button>
+        <button class="burger-menu">
+          <div class="open-icon">
+            <i class="fa-solid fa-bars"></i>
+          </div>
+          <div class="close-icon hide">
+            <i class="fa-solid fa-xmark"></i>
+          </div>
+        </button>
       </div>
     </header>
     <main>
-      <div class="register-form">
-        <h1 class="m-heading">Register new account</h1>
-        <form>
-          <fieldset>
-            <label class="m-font" for="name">Name</label>
-            <input type="text" id="name" name="name" required />
-          </fieldset>
-          <fieldset>
-            <label class="m-font" for="email">Email</label>
-            <input type="email" id="email" name="email" required />
-          </fieldset>
-          <fieldset>
-            <label class="m-font" for="password">Password</label>
-            <input type="password" id="password" name="password" required />
-          </fieldset>
-        </form>
-        <a class="cta cta-blue" href="">Register</a>
-        <div class="got-account">
-          <p class="s-font">Already got an account?</p>
-          <a class="s-font bold" href="">Login here</a>
+      <div class="margin">
+        <div class="account-form">
+          <h1 class="m-heading">Register new account</h1>
+          <form id="register-form">
+            <fieldset>
+              <label class="m-font" for="name">Name</label>
+              <input type="text" id="register-name" name="name" required />
+            </fieldset>
+            <fieldset>
+              <label class="m-font" for="email">Email</label>
+              <input type="email" id="register-email" name="email" required />
+            </fieldset>
+            <fieldset>
+              <label class="m-font" for="password">Password</label>
+              <input
+                type="password"
+                id="register-password"
+                name="password"
+                required
+              />
+            </fieldset>
+            <button id="register-button" class="cta cta-blue" type="button">
+              Register
+            </button>
+            <p id="register-error" class="error s-font"></p>
+          </form>
+          <div class="got-account">
+            <p class="s-font">Already got an account?</p>
+            <a class="s-font bold" href="login.html">Login here</a>
+          </div>
         </div>
       </div>
     </main>
-    <footer>
+    <footer class="padding">
       <div class="footer-top">
-        <div class="opening-hours">
-          <h3 class="xl-font">Opening hours</h3>
-          <ul class="footer-list">
-            <li class="l-font">Mon–Fri: 10:00–22:00</li>
-            <li class="l-font">Sat: 12:00–02:00</li>
-            <li class="l-font">Sun: 12:00–22:00</li>
-          </ul>
-        </div>
-        <div class="links-container">
-          <div class="links">
-            <h3 class="xl-font">Links</h3>
+        <div class="footer-lists">
+          <div class="opening-hours">
+            <h3 class="s-heading">Opening hours</h3>
             <ul class="footer-list">
-              <li class="l-font">Terms & Conditions</li>
-              <li class="l-font">Privacy Policy</li>
+              <li class="l-font">Mon–Fri: 10:00–22:00</li>
+              <li class="l-font">Sat: 12:00–02:00</li>
+              <li class="l-font">Sun: 12:00–22:00</li>
             </ul>
           </div>
-        </div>
-        <div class="footer-right-container">
-          <div class="footer-right">
-            <div class="footer-socials">
-              <i class="socials fa-brands fa-facebook"></i>
-              <i class="socials fa-brands fa-instagram"></i>
-              <i class="socials fa-brands fa-snapchat"></i>
-            </div>
-            <div class="contact-info m-font">
-              <p>Spasiba AS</p>
-              <p>Spaserturen 33</p>
-              <p>1234 Spabygd</p>
-              <p>Phone: +47 999 99 999</p>
-              <p>Email: post@spasiba.no</p>
+          <div class="links-container">
+            <div class="links">
+              <h3 class="s-heading">Links</h3>
+              <ul class="footer-list">
+                <li class="l-font">Terms & Conditions</li>
+                <li class="l-font">Privacy Policy</li>
+              </ul>
             </div>
           </div>
         </div>
-      </div>
-      <div class="footer-bottom">
         <div class="newsletter">
-          <h3 class="xl-font">Newsletter</h3>
+          <h3 class="s-heading">Newsletter</h3>
           <form class="footer-form">
             <label class="footer-label m-font" for="email">Email</label>
             <input
@@ -114,14 +138,26 @@
             <a class="footer-button cta cta-gold" href="">Subscribe</a>
           </form>
         </div>
-        <div class="footer-logo-container">
-          <div class="footer-logo">
-            <img
-              src="../images/logo-footer.svg"
-              alt="Alternative logo for Spasiba"
-            />
-            <p class="s-font">© Copyright Spasiba 2024</p>
-          </div>
+      </div>
+      <div class="footer-bottom">
+        <div class="footer-socials">
+          <i class="socials fa-brands fa-facebook"></i>
+          <i class="socials fa-brands fa-instagram"></i>
+          <i class="socials fa-brands fa-snapchat"></i>
+        </div>
+        <div class="contact-info m-font">
+          <p>Spasiba AS</p>
+          <p>Spaserturen 33</p>
+          <p>1234 Spabygd</p>
+          <p>Phone: +47 999 99 999</p>
+          <p>Email: post@spasiba.no</p>
+        </div>
+        <div class="footer-logo">
+          <img
+            src="../images/logo-footer.svg"
+            alt="Alternative logo for Spasiba"
+          />
+          <p class="s-font">© Copyright Spasiba 2024</p>
         </div>
       </div>
     </footer>
