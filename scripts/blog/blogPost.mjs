@@ -4,7 +4,7 @@ import { creationDate, updateDate } from "../utils/formatDate.mjs";
 import { isUpdated } from "./checkStatus.mjs";
 import { checkRedirect } from "../loginRedirect.mjs";
 
-window.addEventListener("pageshow", checkRedirect());
+window.addEventListener("pageshow", checkRedirect);
 
 async function generatePostContent(post) {
   document.title = `${post.title} | Spasiba`;

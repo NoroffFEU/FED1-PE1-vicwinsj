@@ -3,7 +3,7 @@ import { displayCarousel } from "./carousel.mjs";
 import { displayBlogPosts } from "./blogPosts.mjs";
 import { checkRedirect } from "../loginRedirect.mjs";
 
-window.addEventListener("pageshow", checkRedirect());
+window.addEventListener("pageshow", checkRedirect);
 
 export async function renderBlog() {
   displayCarousel(posts);
