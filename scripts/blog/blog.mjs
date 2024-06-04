@@ -1,7 +1,7 @@
 import { posts } from "../utils/fetchPosts.mjs";
 import { displayCarousel } from "./carousel.mjs";
 import { displayBlogPosts } from "./blogPosts.mjs";
-import { checkRedirect } from "../loginRedirect.mjs";
+import { checkRedirect } from "../account/loginRedirect.mjs";
 
 window.addEventListener("pageshow", checkRedirect);
 
