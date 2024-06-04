@@ -2,20 +2,20 @@ import { burger, toggleMenu, toggleMenuVisibility } from "./menu.mjs";
 import { toggleAccountLinks } from "../account/accountLinks.mjs";
 import { logoutButton, logout } from "../account/logout.mjs";
 
-function menu() {
+function menuFunction() {
   burger.addEventListener("click", toggleMenu);
   window.addEventListener("resize", toggleMenuVisibility);
-  toggleAccountLinks();
+  toggleMenuVisibility();
 }
 
-function account() {
+function accountFunction() {
   toggleAccountLinks();
   logoutButton.addEventListener("click", logout);
 }
 
 function main() {
-  menu();
-  account();
+  menuFunction();
+  accountFunction();
 }
 
 main();
