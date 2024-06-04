@@ -1,6 +1,7 @@
 import { post } from "../utils/fetchPost.mjs";
 import { accessToken } from "../utils/localStorage.mjs";
 import { BLOG_POSTS_ENDPOINT } from "../urls/apiUrl.mjs";
+import { NOROFF_GITHUB_BASE_URL } from "../urls/githubUrl.mjs";
 
 async function deletePost() {
   try {
@@ -17,8 +18,7 @@ async function deletePost() {
     if (!response.ok) {
       throw new Error("Network response was not ok " + response.statusText);
     } else {
-      window.location.href = "/index.html";
-      console.log("Successfully deleted post with id:", id);
+      window.location.href`${NOROFF_GITHUB_BASE_URL}/index.html`;
     }
   } catch (error) {
     console.error("There was a problem with the fetch operation:", error);
