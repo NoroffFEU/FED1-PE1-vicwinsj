@@ -18,7 +18,7 @@ async function deletePost() {
     if (!response.ok) {
       throw new Error("Network response was not ok " + response.statusText);
     } else {
-      window.location.href`${NOROFF_GITHUB_BASE_URL}/index.html`;
+      window.location.href = `${NOROFF_GITHUB_BASE_URL}/index.html`;
     }
   } catch (error) {
     console.error("There was a problem with the fetch operation:", error);
