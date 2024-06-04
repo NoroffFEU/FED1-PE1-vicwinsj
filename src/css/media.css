@@ -81,6 +81,10 @@
 
   /* index.html */
 
+  .carousel-item {
+    height: 600px;
+  }
+
   .blog-posts {
     grid-template-columns: auto auto;
     grid-template-rows: minmax(100px, auto);
@@ -197,6 +201,10 @@
   }
 
   /* index.html */
+
+  .carousel-item {
+    height: 800px;
+  }
 
   .blog-posts {
     grid-template-columns: 333px 333px 333px;

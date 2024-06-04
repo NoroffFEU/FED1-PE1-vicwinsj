@@ -2,10 +2,6 @@ main {
   background-color: var(--light-grey);
 }
 
-input {
-  /* border: solid 1px var(--dark-grey); */
-}
-
 .account-form {
   background-color: var(--gold);
   padding: 100px 50px 100px 50px;
@@ -14,7 +10,6 @@ input {
   display: flex;
   flex-direction: column;
   gap: 50px;
-  /* width: 600px; */
   color: var(--white);
 }
 
@@ -30,10 +25,6 @@ input {
   display: flex;
   gap: 5px;
 }
-
-/* .got-account a {
-  color: var(--dark-grey);
-} */
 
 .error {
   color: red;
