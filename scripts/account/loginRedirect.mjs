@@ -1,5 +1,7 @@
+import { NOROFFFEU_GITHUB_BASE_URL } from "../urls/githubUrl.mjs";
+
 export function loginRedirect() {
-  const forbiddenPage = "http://127.0.0.1:5500/account/register.html";
+  const forbiddenPage = `${NOROFFFEU_GITHUB_BASE_URL}/account/register.html`;
   const referrer = document.referrer;
 
   if (referrer !== forbiddenPage) {
