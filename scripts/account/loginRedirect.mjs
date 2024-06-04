@@ -13,6 +13,6 @@ export function loginRedirect() {
   if (getBaseUrl(referrer) !== forbiddenPage) {
     window.history.go(-1);
   } else {
-    window.location.href = "../index.html";
+    window.location.href = `${NOROFF_GITHUB_BASE_URL}/index.html`;
   }
 }
