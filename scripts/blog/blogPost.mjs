@@ -2,7 +2,7 @@ import { editButton, toggleEditButton } from "../edit/editButton.mjs";
 import { post } from "../utils/fetchPost.mjs";
 import { creationDate, updateDate } from "../utils/formatDate.mjs";
 import { isUpdated } from "./checkStatus.mjs";
-import { checkRedirect } from "../loginRedirect.mjs";
+import { checkRedirect } from "../account/loginRedirect.mjs";
 
 window.addEventListener("pageshow", checkRedirect);
 
