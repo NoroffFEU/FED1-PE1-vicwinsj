@@ -2,15 +2,9 @@ import { editButton, toggleEditButton } from "../edit/editButton.mjs";
 import { post } from "../utils/fetchPost.mjs";
 import { creationDate, updateDate } from "../utils/formatDate.mjs";
 import { isUpdated } from "./checkStatus.mjs";
+import { checkRedirect } from "../loginRedirect.mjs";
 
-window.addEventListener("pageshow", function (event) {
-  if (
-    event.persisted ||
-    performance.getEntriesByType("navigation")[0].type === "back_forward"
-  ) {
-    location.reload();
-  }
-});
+window.addEventListener("pageshow", checkRedirect());
 
 async function generatePostContent(post) {
   document.title = `${post.title} | Spasiba`;
