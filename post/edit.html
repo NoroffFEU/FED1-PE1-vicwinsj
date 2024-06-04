@@ -61,14 +61,14 @@
           <a id="register-link" href="../account/register.html">Register</a>
         </div>
         <button id="logout-button" class="m-font hide">Logout</button>
-        <button class="burger-menu">
-          <div class="open-icon">
+        <div class="burger-menu">
+          <button class="open-icon">
             <i class="fa-solid fa-bars"></i>
-          </div>
-          <div class="close-icon hide">
+          </button>
+          <button class="close-icon hide">
             <i class="fa-solid fa-xmark"></i>
-          </div>
-        </button>
+          </button>
+        </div>
       </div>
     </header>
     <main>
@@ -82,31 +82,26 @@
         </h1>
         <form>
           <fieldset>
-            <label class="m-font" for="title">Title</label>
+            <label class="m-font" for="edit-title">Title</label>
             <input type="text" id="edit-title" name="title" required />
           </fieldset>
           <fieldset>
-            <label class="m-font" for="body">Body</label>
-            <textarea
-              type="text"
-              id="edit-body"
-              name="body"
-              required
-            ></textarea>
+            <label class="m-font" for="edit-body">Body</label>
+            <textarea id="edit-body" name="body" required></textarea>
           </fieldset>
           <div class="edit-bottom">
             <div class="edit-image">
               <div class="edit-image-img">
-                <img id="edit-img" alt="" />
+                <img id="edit-img" alt="" src="" />
               </div>
               <a id="upload-img-link" class="m-font">Upload new picture</a>
               <div class="img-fields">
                 <fieldset id="url-fieldset" class="hide">
-                  <label class="m-font" for="url">Image URL</label>
+                  <label class="m-font" for="img-input">Image URL</label>
                   <input type="url" id="img-input" name="url" required />
                 </fieldset>
                 <fieldset id="alt-fieldset" class="hide">
-                  <label class="m-font" for="alt">Alt text</label>
+                  <label class="m-font" for="alt-input">Alt text</label>
                   <input type="text" id="alt-input" name="alt" required />
                 </fieldset>
               </div>
@@ -143,7 +138,7 @@
         <div class="newsletter">
           <h3 class="s-heading">Newsletter</h3>
           <form class="footer-form">
-            <label class="footer-label m-font" for="email">Email</label>
+            <label class="footer-label m-font" for="footer-email">Email</label>
             <input
               type="email"
               id="footer-email"

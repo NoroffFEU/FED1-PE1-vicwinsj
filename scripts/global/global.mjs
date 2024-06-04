@@ -5,7 +5,6 @@ import { logoutButton, logout } from "../account/logout.mjs";
 function menu() {
   burger.addEventListener("click", toggleMenu);
   window.addEventListener("resize", toggleMenuVisibility);
-  toggleMenuVisibility();
   toggleAccountLinks();
 }
 

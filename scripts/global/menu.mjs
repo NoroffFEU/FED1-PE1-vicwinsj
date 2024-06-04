@@ -20,7 +20,7 @@ export function toggleMenuVisibility() {
   const viewportWidth = window.innerWidth;
   const desktopWidth = 1200;
 
-  if (viewportWidth > desktopWidth) {
+  if (viewportWidth >= desktopWidth) {
     menu.classList.add("visible");
   } else {
     menu.classList.remove("visible");
