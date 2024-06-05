@@ -1,5 +1,67 @@
-# FED1 Project Exam 1
+# Project Exam 1 – "Spasiba"
 
-When I first started this exam project I was excited and eager to learn how to make a website with blog post functionality. I started setting up a project board and deciding which fictional client I was supposed to create the site for. Unfortunately I got sick the following week with an angina, and therefore I lost 2–3 weeks of the exam period. I got demotivated as a result, especially after facing some quite frustrating issues making a responsive menu using javascript. I got into a negative spiral of thought and started thinking that I maybe had to do a resit, but I managed to get back some faith again with the help of a friend. The extension of the deadline with one week because of my illness helped me make a go for it, and I'm proud of the result considering how far from finishing I was just a week ago.
+![image](https://github.com/NoroffFEU/FED1-PE1-vicwinsj/assets/105510116/0d681e2e-e49d-4965-b8ba-196a61a66daf)
 
-The roadmap of my project board could have been more structured if I didn't get sick, but also I did in fact not know all the issues that would be necessary to meet the exam brief. So there are quite a few issues that I quickly did on the go as I faced them, without noting them down in the project board. I figured that would have slowed down the momentum I needed to get the project done before deadline.
+This project aimed to put into practice the skills (including design, HTML, CSS and JavaScript) I learnt the first year at the Front-end Development program at Noroff. I was to demonstrate my ability to interpret a brief, plan a solution, design a user interface, build and test a responsive web application.
+
+## Description
+
+According to the brief I was hired to build a front-end user interface for an existing API blogging application. The client had asked for a responsive application that allows users to view dynamic blog posts. The client required admin pages to register, login and manage their blog posts.
+
+The following API endpoints was required to complete this project:
+
+· GET /blog/posts/<name>
+
+· GET /blog/posts/<name>/<id>
+
+· PUT /blog/posts/<name>/<id>
+
+· DELETE /blog/posts/<name>/<id>
+
+· POST /auth/register
+
+· POST /auth/login
+
+## Built With
+
+- HTML
+- CSS
+- JavaScript
+
+## Getting Started
+
+### Installing
+
+1. Clone the repo:
+
+```bash
+git clone git@github.com:NoroffFEU/html-css-javascript1-cross-course-assignments-vicwinsj.git
+```
+
+2. Install the dependencies:
+
+```
+npm install
+```
+
+### Running
+
+Here is where you detail how to run the app. It typically involves the commands you'd need to run to start the project e.g.
+
+To run the app, run the following commands:
+
+```bash
+npm run start
+```
+
+## Contributing
+
+If you want to come with suggestions for changes, you're free to open a pull request for review.
+
+## Contact
+
+[My LinkedIn page](https://www.linkedin.com/in/victor-winsjansen-71773a83/.com)
+
+## Acknowledgments
+
+I would like to give a shoutout to [@TonyArntsen](https://github.com/TonyArntsen) for help and support with making me get this project done.
