@@ -8,7 +8,7 @@ This project aimed to put into practice the skills (including design, HTML, CSS 
 
 According to the brief I was hired to build a front-end user interface for an existing API blogging application. The client had asked for a responsive application that allows users to view dynamic blog posts. The client required admin pages to register, login and manage their blog posts.
 
-The following API endpoints was required to complete this project:
+The following API endpoints were required to complete this project:
 
 · GET /blog/posts/<name>
 
